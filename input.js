@@ -9,20 +9,24 @@ const handleUserInput = function (data) {
     process.exit();
   }
 
-  if(data ==='w'){
+  if (data === 'w') {
     connection.write('Move: up');
   }
 
-  if(data ==='a'){
+  if (data === 'a') {
     connection.write('Move: left');
   }
 
-  if(data ==='s'){
+  if (data === 's') {
     connection.write('Move: down');
   }
 
-  if(data ==='d'){
+  if (data === 'd') {
     connection.write('Move: right');
+  }
+
+  if (data === 'q') {
+    connection.write('Say: FUN');
   }
 }
 
